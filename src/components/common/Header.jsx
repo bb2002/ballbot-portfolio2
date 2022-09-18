@@ -1,4 +1,4 @@
-import { HeaderContainer, HeaderItem } from "../../styles/common/Header.css";
+import { HeaderContainer, HeaderItem } from "../../styles/components/common/Header.css";
 
 const Header = () => {
   return (

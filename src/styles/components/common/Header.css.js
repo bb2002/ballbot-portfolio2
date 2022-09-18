@@ -5,6 +5,12 @@ export const HeaderContainer = styled.header`
   margin: 40px 0 40px 0;
   display: flex;
   justify-content: center;
+  
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 `
 
 export const HeaderItem = styled.a`
@@ -14,4 +20,8 @@ export const HeaderItem = styled.a`
   font-weight: bold;
   text-decoration: none;
   font-size: 1.5rem;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.125rem;
+  }
 `

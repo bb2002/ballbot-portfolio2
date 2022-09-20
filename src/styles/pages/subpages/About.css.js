@@ -96,7 +96,7 @@ export const AboutMeCardWithTitle = styled.div`
   
   li {
     color: white;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 24px;
   }
 
@@ -108,4 +108,8 @@ export const AboutMeCardWithTitle = styled.div`
 export const AboutMeCardPadding = styled.div`
   width: 8px;
   height: 8px;
+`
+
+export const CleanCodeLi = styled.li`
+  color: white;
 `

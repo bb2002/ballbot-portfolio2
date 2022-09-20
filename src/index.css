@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+  font-family: "Helvetica";
+  src: url("assets/fonts/Helvetica.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("assets/fonts/Helvetica Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("assets/fonts/Helvetica Light.ttf");
+  font-style: normal;
+  font-weight: 300;
+}
 @import '~antd/dist/antd.css';
 
 html, body {

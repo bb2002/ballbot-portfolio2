@@ -1,0 +1,21 @@
+.ant-modal-content {
+    background-color: black;
+    border-radius: 8px;
+    border: 3px solid white;
+}
+
+.ant-modal-footer {
+    display: none;
+}
+
+.ant-modal-close-x {
+    color: white;
+}
+
+.ant-modal-header {
+    background-color: black;
+}
+
+.ant-modal-title {
+    color: white;
+}

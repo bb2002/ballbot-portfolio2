@@ -1,31 +1,32 @@
 import {
   AboutMeCardContainer, AboutMeCardPadding, AboutMeCardWithIcon,
   AboutMeCardWithTitle,
-  AboutPage,
+  AboutPage, CleanCodeLi,
   Underline,
   WelcomeMessage
-} from "../styles/pages/About.css";
-import { Modal } from "antd";
+} from "../../styles/pages/subpages/About.css";
 import { useState } from "react";
+import DarkModal from "../../components/common/DarkModal";
 
-const i_github = require('../assets/icons/i_github.png');
+const i_github = require('../../assets/icons/i_github.png');
 
 const About = () => {
   const [modal2Open, setModal2Open] = useState(false);
 
   return (
     <AboutPage>
-      <Modal
-        title="Vertically centered modal dialog"
-        centered
+      <DarkModal
+        title="클린 코드에 대한 생각"
+        centered={true}
         open={modal2Open}
-        onOk={() => setModal2Open(false)}
-        onCancel={() => setModal2Open(false)}
-      >
-        <p>some contents...</p>
-        <p>some contents...</p>
-        <p>some contents...</p>
-      </Modal>
+        onCancel={() => setModal2Open(false)}>
+        <ol>
+          <CleanCodeLi>Clean Code 를 너무 맹신하지는 않는다.</CleanCodeLi>
+          <CleanCodeLi>조직이 정한 컨벤션을 따라 조직에 어울리는 코드를 쓴다.</CleanCodeLi>
+          <CleanCodeLi>오묘한 이름보다는 길고 장황한 이름이 낫다.</CleanCodeLi>
+          <CleanCodeLi>내가 쓴 코드는 내 것이 아닌 조직의 것으로 만들어야 한다.</CleanCodeLi>
+        </ol>
+      </DarkModal>
 
       <WelcomeMessage>안녕하세요.</WelcomeMessage>
       <WelcomeMessage>

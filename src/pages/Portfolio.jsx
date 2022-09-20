@@ -1,5 +1,7 @@
 import Header from "../components/common/Header";
-import About from "./About";
+import About from "./subpages/About";
+import Timeline from "./subpages/Timelline";
+import {SubPageMargin} from "../styles/pages/Portfolio.style";
 
 const Portfolio = () => {
   return (
@@ -9,6 +11,11 @@ const Portfolio = () => {
       {
         // About 화면 표시
         <About />
+      }
+      <SubPageMargin />
+      {
+        // Timeline 화면 표시
+        <Timeline />
       }
     </div>
   );

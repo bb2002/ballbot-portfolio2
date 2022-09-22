@@ -18,14 +18,6 @@ export const TimelineContainer = styled.div`
   }
 `
 
-export const TimelineTitle = styled.h1`
-  color: white;
-  font-family: "Helvetica", sans-serif;
-  font-weight: 300;
-  font-size: 3rem;
-  margin-bottom: 64px;
-`
-
 export const TimelineEdge = styled.div`
   width: 32px;
   height: 32px;
@@ -162,4 +154,10 @@ export const TimelineContentIcon = styled.div`
 export const ProjectUnderline = styled.span`
   text-decoration: underline;
   cursor: pointer;
+`
+
+export const ProjectImage = styled.img`
+  width: 600px;
+  max-height: 320px;
+  object-fit: cover;
 `

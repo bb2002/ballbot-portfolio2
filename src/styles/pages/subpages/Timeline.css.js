@@ -163,3 +163,9 @@ export const ProjectUnderline = styled.span`
   text-decoration: underline;
   cursor: pointer;
 `
+
+export const ProjectImage = styled.img`
+  width: 600px;
+  max-height: 320px;
+  object-fit: cover;
+`

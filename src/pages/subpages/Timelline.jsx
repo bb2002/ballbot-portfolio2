@@ -1,4 +1,5 @@
 import {
+  ProjectImage,
   ProjectUnderline,
   TimelineConnect,
   TimelineContainer, TimelineContentIcon, TimelineContentLeft, TimelineContentRight,
@@ -8,6 +9,9 @@ import {
 } from "../../styles/pages/subpages/Timeline.css";
 import {useState} from "react";
 import DarkModal from "../../components/common/DarkModal";
+import { EffectFade, Navigation, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {TIMELINE_PROJECT_IMAGES} from "../../libs/constants";
 
 const Timeline = () => {
   const [openedModal, setOpenedModal] = useState(null);
@@ -23,7 +27,28 @@ const Timeline = () => {
         centered={true}
         open={openedModal !== null}
         onCancel={onCancel}>
-        <p>asdfasdf</p>
+        <Swiper
+          spaceBetween={30}
+          effect={"fade"}
+          navigation={true}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[EffectFade, Navigation, Pagination]}
+          className="mySwiper"
+        >
+        {
+          (openedModal !== null) && (
+            TIMELINE_PROJECT_IMAGES[openedModal].map((value) => (
+              <SwiperSlide>
+                <ProjectImage
+                  src={value}
+                  alt="project img"/>
+              </SwiperSlide>
+            ))
+          )
+        }
+        </Swiper>
       </DarkModal>
 
       <TimelineTitle>Timeline_</TimelineTitle>
@@ -65,7 +90,7 @@ const Timeline = () => {
             <h2>2018</h2>
             <p>
               휴대폰 화면에 표시된 텍스트를 OCR 을 통해 읽고,
-              번역해주는 앱 '스크린 번역기'를 개발 및 운영
+              번역해주는 앱 <ProjectUnderline onClick={() => setOpenedModal('screentranslate')}>'스크린 번역기'</ProjectUnderline>를 개발 및 운영
             </p>
           </div>
         </TimelineContentRight>
@@ -78,7 +103,8 @@ const Timeline = () => {
             <h2>2020</h2>
             <p>
               C++ 기반의 언리얼 엔진을 이용하여 3D 게임
-              'MyRunnerGame', '런 켓' 등을 개발
+              <ProjectUnderline onClick={() => setOpenedModal('myrunnergame')}>'MyRunnerGame'</ProjectUnderline>,
+              <ProjectUnderline onClick={() => setOpenedModal('runcat')}>'런 켓'</ProjectUnderline> 등을 개발
             </p>
           </div>
         </TimelineContentLeft>
@@ -90,8 +116,9 @@ const Timeline = () => {
           <div className="tl-title-content">
             <h2>2021</h2>
             <p>
-              React 라이브러리를 이용하여 'KNU 코딩 플랫폼',
-              '(주)이오' 웹 사이트를 개발
+              React 라이브러리를 이용하여
+              <ProjectUnderline onClick={() => setOpenedModal('codeduri')}>'KNU 코딩 플랫폼'</ProjectUnderline>,
+              <ProjectUnderline onClick={() => setOpenedModal('io')}>'(주)이오'</ProjectUnderline> 웹 사이트를 개발
             </p>
           </div>
         </TimelineContentRight>

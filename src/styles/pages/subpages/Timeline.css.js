@@ -18,14 +18,6 @@ export const TimelineContainer = styled.div`
   }
 `
 
-export const TimelineTitle = styled.h1`
-  color: white;
-  font-family: "Helvetica", sans-serif;
-  font-weight: 300;
-  font-size: 3rem;
-  margin-bottom: 64px;
-`
-
 export const TimelineEdge = styled.div`
   width: 32px;
   height: 32px;

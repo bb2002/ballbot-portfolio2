@@ -17,6 +17,7 @@ const Portfolio = () => {
         // Timeline 화면 표시
         <Timeline />
       }
+      <SubPageMargin />
     </div>
   );
 }

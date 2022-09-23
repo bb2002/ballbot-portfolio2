@@ -3,6 +3,7 @@ import About from "./subpages/About";
 import Timeline from "./subpages/Timelline";
 import {SubPageMargin} from "../styles/pages/Portfolio.style";
 import Tech from "./subpages/Tech";
+import Projects from "./subpages/Projects";
 
 const Portfolio = () => {
   return (
@@ -23,6 +24,12 @@ const Portfolio = () => {
         // Tech 화면 표시
         <Tech />
       }
+      <SubPageMargin />
+      {
+        // Projects 화면 표시
+        <Projects />
+      }
+      <SubPageMargin />
     </div>
   );
 }

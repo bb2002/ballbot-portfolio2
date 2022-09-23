@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
 export const SubPageMargin = styled.div`
-  height: 128px;
+  height: 196px;
   width: 100%;
 `

@@ -1,5 +1,5 @@
-import {SkillViewerMargin, TechPage} from "../../styles/pages/subpages/Tech.css";
-import { SubpageTitle } from "../../styles/pages/subpages/SubpageCommon.css";
+import {SkillViewerMargin} from "../../styles/pages/subpages/Tech.css";
+import {CommonPage, SubpageTitle} from "../../styles/pages/subpages/SubpageCommon.css";
 import SkillSetViewer from "../../components/tech/SkillSetViewer";
 import {useState} from "react";
 import {BACKEND_SKILL_CONTENT} from "../../libs/contents/tech/backend_skills";
@@ -16,7 +16,7 @@ const Tech = () => {
   }
 
   return (
-    <TechPage>
+    <CommonPage>
       <SubpageTitle>Tech_</SubpageTitle>
 
       <SkillSetViewer
@@ -61,7 +61,7 @@ const Tech = () => {
         onSkillSelect={(value) => onSkillSelectHandler(2, value)}
         skillContents={DEVOPS_SKILL_CONTENT}
       />
-    </TechPage>
+    </CommonPage>
   )
 }
 

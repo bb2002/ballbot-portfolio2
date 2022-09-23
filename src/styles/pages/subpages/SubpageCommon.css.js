@@ -7,3 +7,10 @@ export const SubpageTitle = styled.h1`
   font-size: 3rem;
   margin-bottom: 64px;
 `
+
+export const CommonPage = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`

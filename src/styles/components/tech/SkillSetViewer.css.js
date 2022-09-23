@@ -17,7 +17,7 @@ export const SkillSetContainer = styled.div`
 `
 
 export const SkillSetTitle = styled.div`
-  margin-right: 64px;
+  width: 320px;
   
   h3 {
     color: white;

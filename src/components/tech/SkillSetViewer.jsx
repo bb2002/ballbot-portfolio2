@@ -6,16 +6,8 @@ import {
   SkillSetTitle
 } from "../../styles/components/tech/SkillSetViewer.css";
 import SkillIcon from "./SkillIcon";
-import { useState } from "react";
-import { BACKEND_SKILL_SET } from "../../libs/constants";
 
-const SkillSetViewer = ({ skillSetName, skillSetIcon, skills }) => {
-  const [selectedBackendSkill, setSelectedBackendSkill] = useState("NodeJS");
-
-  const onBackendSkillClickHandler = (skillName) => {
-    setSelectedBackendSkill(skillName);
-  }
-
+const SkillSetViewer = ({ skillSetName, skillSetIcon, skills, onSkillSelect, selectedSkill, skillContents }) => {
   return (
     <SkillSetContainer>
       <SkillSetTitle>
@@ -23,20 +15,21 @@ const SkillSetViewer = ({ skillSetName, skillSetIcon, skills }) => {
         <h1><img src={skillSetIcon} alt="set icon" /> {skillSetName}</h1>
       </SkillSetTitle>
       <SkillSetContent>
-        <SkillSetButtonContainer style={{ width: 648 }}>
+        <SkillSetButtonContainer style={{ width: skills.length * 120 + (skills.length - 1) * 8 }}>
           {
             skills.map((value) => (
               <SkillIcon
+                key={value.name}
                 skillName={value.name}
                 skillIcon={value.icon}
-                onClick={() => onBackendSkillClickHandler(value.name)}
-                selected={selectedBackendSkill === value.name} />
+                onClick={() => onSkillSelect(value.name)}
+                selected={selectedSkill === value.name} />
             ))
           }
         </SkillSetButtonContainer>
-        <SkillLearnAt>Learning At: {BACKEND_SKILL_SET[selectedBackendSkill].date}</SkillLearnAt>
+        <SkillLearnAt>Learning At: {skillContents[selectedSkill].date}</SkillLearnAt>
         <SkillExplain>
-          {BACKEND_SKILL_SET[selectedBackendSkill].content}
+          {skillContents[selectedSkill].content}
         </SkillExplain>
       </SkillSetContent>
     </SkillSetContainer>

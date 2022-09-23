@@ -1,4 +1,4 @@
-import { SkillIconContainer } from "../../styles/components/common/SkillIcon.style";
+import { SkillIconContainer } from "../../styles/components/tech/SkillIcon.style";
 
 const SkillIcon = ({ skillName, skillIcon, onClick, selected }) => {
   return (

@@ -6,3 +6,8 @@ export const TechPage = styled.div`
   flex-direction: column;
   align-items: center;
 `
+
+export const SkillViewerMargin = styled.div`
+  height: 64px;
+  width: 100%;
+`

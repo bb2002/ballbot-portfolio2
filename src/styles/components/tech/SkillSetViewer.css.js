@@ -5,10 +5,19 @@ export const SkillSetContainer = styled.div`
   border: 1px solid white;
   padding: 24px;
   display: flex;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    width: calc(100% - 16px);
+    max-width: 768px;
+    min-width: 310px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
 `
 
 export const SkillSetTitle = styled.div`
-  flex: 1;
+  margin-right: 64px;
   
   h3 {
     color: white;
@@ -31,6 +40,11 @@ export const SkillSetTitle = styled.div`
       object-fit: cover;
     }
   }
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
 `
 
 export const SkillSetContent = styled.div`
@@ -45,6 +59,17 @@ export const SkillSetButtonContainer = styled.div`
 
   .selected {
     border: 4px solid #1e90ff;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 100% !important;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+    div {
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
   }
 `
 

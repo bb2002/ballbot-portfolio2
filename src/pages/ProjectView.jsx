@@ -2,7 +2,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { Header, ProjectViewContainer, ProjectViewPage } from "../styles/pages/ProjectView.css";
 
 const ProjectView = () => {
-  //const { projectName } = useParams();
+  const { projectName } = useParams();
   const navigate = useNavigate();
 
   const onBackClicked = () => {
@@ -15,6 +15,8 @@ const ProjectView = () => {
         <Header>
           <img src={require('../assets/icons/i_arrow_back.png')} alt="Back" onClick={onBackClicked} />
         </Header>
+
+        {projectName}
       </ProjectViewPage>
     </ProjectViewContainer>
 

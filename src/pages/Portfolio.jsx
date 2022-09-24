@@ -1,7 +1,7 @@
 import Header from "../components/common/Header";
 import About from "./subpages/About";
 import Timeline from "./subpages/Timelline";
-import {SubPageMargin} from "../styles/pages/Portfolio.style";
+import {SubPageMargin} from "../styles/pages/Portfolio.css";
 import Tech from "./subpages/Tech";
 import Projects from "./subpages/Projects";
 

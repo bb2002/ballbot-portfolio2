@@ -21,7 +21,7 @@ const Timeline = () => {
   }
 
   return (
-    <TimelinePage>
+    <TimelinePage id="timeline">
       <DarkModal
         title="프로젝트 미리보기"
         centered={true}

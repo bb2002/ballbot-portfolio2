@@ -15,8 +15,8 @@ const SPFUNC_CONTENT = {
     "2022년 8월부터 약 1개월",
   ],
   url: [
-    'https://spfunc.ml',
-    'https://github.com/team-special-week/specialfunc-api'
+    { url: 'https://spfunc.ml', iconIdx: 0 },
+    { url: 'https://github.com/team-special-week/specialfunc-api', iconIdx: 1 },
   ],
 
   feature: <>

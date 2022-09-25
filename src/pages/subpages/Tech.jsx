@@ -16,7 +16,7 @@ const Tech = () => {
   }
 
   return (
-    <CommonPage>
+    <CommonPage id="tech">
       <SubpageTitle>Tech_</SubpageTitle>
 
       <SkillSetViewer

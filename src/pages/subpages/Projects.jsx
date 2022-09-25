@@ -21,7 +21,7 @@ const Projects = () => {
   }
 
   return (
-    <CommonPage>
+    <CommonPage id="projects">
       <SubpageTitle>Projects_</SubpageTitle>
 
       <ProjectContainer>

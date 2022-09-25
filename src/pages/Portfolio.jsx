@@ -5,6 +5,8 @@ import {SubPageMargin} from "../styles/pages/Portfolio.css";
 import Tech from "./subpages/Tech";
 import Projects from "./subpages/Projects";
 import { useEffect } from "react";
+import Career from "./subpages/Career";
+import Footer from "../components/common/Footer";
 
 function getOffset(el) {
   const rect = el.getBoundingClientRect();
@@ -52,6 +54,11 @@ const Portfolio = () => {
         <Projects />
       }
       <SubPageMargin />
+      {
+        // Projects 화면 표시
+        <Career />
+      }
+      <Footer />
     </div>
   );
 }

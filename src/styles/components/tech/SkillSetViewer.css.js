@@ -84,6 +84,6 @@ export const SkillExplain = styled.p`
   font-size: 1rem;
   color: #e8e8e8;
   font-weight: 300;
-  height: 128px;
+  min-height: 128px;
   overflow: hidden;
 `

@@ -10,7 +10,7 @@ import {useState} from "react";
 import DarkModal from "../../components/common/DarkModal";
 import { EffectFade, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {TIMELINE_PROJECT_IMAGES} from "../../libs/constants";
+import {TIMELINE_PROJECT_IMAGES} from "../../libs/contents/timeline/timeline_images";
 import { SubpageTitle } from "../../styles/pages/subpages/SubpageCommon.css";
 
 const Timeline = () => {

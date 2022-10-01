@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 const DarkModal = ({ title, centered, open, onCancel, children }) => {
   return (
     <Modal
+      width={700}
       title={title}
       centered={centered}
       open={open}

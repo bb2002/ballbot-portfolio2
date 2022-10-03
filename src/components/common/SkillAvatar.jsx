@@ -31,6 +31,12 @@ const SkillAvatar = {
       <Tooltip placement="top" title="NodeJS">
         <Avatar src={require('../../assets/icons/i_nodejs.png')} style={{ ...avatarDefaultStyle, border: '2px solid #313131'}} />
       </Tooltip>
+    </>,
+  'Docker':
+    <>
+      <Tooltip placement="top" title="Docker">
+        <Avatar src={require('../../assets/icons/i_docker.png')} style={{ ...avatarDefaultStyle, border: '2px solid #0DB1E6'}} />
+      </Tooltip>
     </>
 }
 

@@ -33,6 +33,7 @@ const OVERVIEW_ICONS = [
 const URL_ICON = [
   require('../assets/icons/i_url.png'),
   require('../assets/icons/i_github.png'),
+  require('../assets/icons/i_youtube.png'),
 ]
 
 const ProjectView = () => {

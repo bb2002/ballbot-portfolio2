@@ -7,16 +7,21 @@ const GAKPOK_CONTENT = {
   skills: ['NestJS', 'React'],
   sliderImage: [
     backgroundImage,
-    'https://heavyslash.com/data/file/feed/1028823797_CKdvNOEL_9593ff6cfc9f2cd3184875ab64e82e12c226ad77.jpg'
+    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_2.png?alt=media&token=a5097479-be71-46c0-b425-c4b4584f318e",
+    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_3.png?alt=media&token=62d3e8e5-3386-4902-bbe7-c9db3b45f614",
+    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_4.png?alt=media&token=7c29dec7-e9bc-4468-b519-83bf17db8a29",
+    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_5.png?alt=media&token=f16eb75a-b3fe-4e5f-9286-a259dbdbe078",
+    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_6.png?alt=media&token=ac4b2334-18d9-4899-a77a-3d3cd3b9d82a",
+    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_7.png?alt=media&token=ee6d7633-35ee-4834-98e4-58e66474a668",
+    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_8.png?alt=media&token=6272c324-c512-4e5f-977f-836746481972",
   ],
   overview: [
     "1인 개발",
-    "프론트, 백엔드 개발 담당",
-    "2022년 ~월부터 약 ~개월",
+    "기획 및 개발 전반 담당",
+    "2022년 02월 ~ 2022년 04월",
   ],
   url: [
     { url: 'https://gakpok.saintdev.kr', iconIdx: 0 },
-    { url: 'https://github.com', iconIdx: 1 },
   ],
 
   feature: <>

@@ -4,7 +4,7 @@ import {
   ProjectViewPage,
   Header,
   ProjectViewTitle,
-  Margin, OverviewBox, Container
+  Margin, OverviewBox, Container, ProjectViewSubtitle, ProjectFeature
 } from "../styles/pages/ProjectView.css";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -83,6 +83,17 @@ const ProjectView = () => {
             <img src={require('../assets/icons/i_arrow_back.png')} alt="Back" onClick={onBackClicked} />
           </Header>
           <ProjectViewTitle>{project.title}</ProjectViewTitle>
+          <ProjectViewSubtitle>Serverless 플랫폼 코드 탬플릿</ProjectViewSubtitle>
+          <Margin />
+
+          <ProjectViewTitle>✅ 주요 기능</ProjectViewTitle>
+          <ul>
+            <ProjectFeature>안녕 친구들 해결사가 왔어~!</ProjectFeature>
+            <ProjectFeature>디바 온라인!</ProjectFeature>
+            <ProjectFeature>망치!!!!! 나가신다!!!!</ProjectFeature>
+          </ul>
+          
+          
 
           <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
             {

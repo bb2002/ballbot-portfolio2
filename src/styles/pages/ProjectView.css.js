@@ -22,23 +22,36 @@ export const Header = styled.header`
   @media screen and (max-width: 768px) {
     margin-left: 16px;
   }
-  
+
   img {
     cursor: pointer;
   }
 `
 
 export const ProjectViewTitle = styled.h1`
-  color: white;
-  font-size: 3rem;
-  font-weight: 400;
-  margin-bottom: 64px;
-  
+  color: rgb(240, 240, 240);
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 12px;
+
   @media screen and (max-width: 768px) {
     font-size: 2.125rem;
     width: 100%;
     text-align: center;
   }
+`
+
+export const ProjectViewSubtitle = styled.h3`
+  font-size: 16px;
+  color: rgb(240, 240, 240);
+  font-weight: 300;
+`
+
+export const ProjectFeature = styled.li`
+  font-size: 16px;
+  color: rgb(240, 240, 240);
+  font-weight: 300;
+  line-height: 2rem;
 `
 
 export const Margin = styled.div`

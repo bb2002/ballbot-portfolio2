@@ -4,7 +4,6 @@ const ProjectViewSection = ({title, children}) => {
   return (
     <Section>
       <h2>{title}</h2>
-      <div className="custom-hr" />
       {children}
     </Section>
   )

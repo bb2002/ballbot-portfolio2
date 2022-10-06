@@ -49,8 +49,8 @@ export const ProjectViewSubtitle = styled.h3`
 
 export const ProjectFeature = styled.li`
   font-size: 16px;
-  color: rgb(240, 240, 240);
-  font-weight: 300;
+  color: white;
+  font-weight: normal;
   line-height: 2rem;
 `
 
@@ -79,14 +79,14 @@ export const Section = styled.div`
   h2 {
     font-size: 1.75rem;
     color: white;
-    margin: 0;
+    margin: 0 0 8px 0;
   }
 
   p {
     color: #f1f1f1;
-    font-weight: 300;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     display: flex;
+    font-size: 16px;
     align-items: center;
 
     img {
@@ -94,6 +94,11 @@ export const Section = styled.div`
       width: 16px;
       height: 16px;
     }
+  }
+
+  a {
+    color: #a6a6a6;
+    text-decoration: underline;
   }
 
   .custom-hr {

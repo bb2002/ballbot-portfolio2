@@ -4,7 +4,7 @@ import {
   ProjectViewPage,
   Header,
   ProjectViewTitle,
-  Margin, OverviewBox, Container, ProjectViewSubtitle, ProjectFeature
+  Margin, OverviewBox, Container, ProjectViewSubtitle, ProjectFeature, SwiperImageContainer
 } from "../styles/pages/ProjectView.css";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -29,12 +29,6 @@ const OVERVIEW_ICONS = [
   require('../assets/icons/i_clock.png'),
   require('../assets/icons/i_tools.png')
 ];
-
-const URL_ICON = [
-  require('../assets/icons/i_url.png'),
-  require('../assets/icons/i_github.png'),
-  require('../assets/icons/i_youtube.png'),
-]
 
 const ProjectView = () => {
   const { projectName } = useParams();
@@ -86,35 +80,48 @@ const ProjectView = () => {
           <ProjectViewSubtitle>Serverless 플랫폼 코드 탬플릿</ProjectViewSubtitle>
           <Margin />
 
-          <ProjectViewTitle>✅ 주요 기능</ProjectViewTitle>
-          <ul>
-            <ProjectFeature>안녕 친구들 해결사가 왔어~!</ProjectFeature>
-            <ProjectFeature>디바 온라인!</ProjectFeature>
-            <ProjectFeature>망치!!!!! 나가신다!!!!</ProjectFeature>
-          </ul>
-          
-          
+          <ProjectViewSection title="✅ 주요 기능">
+            <ul>
+              <ProjectFeature>안녕 친구들 해결사가 왔어~!</ProjectFeature>
+              <ProjectFeature>디바 온라인!</ProjectFeature>
+              <ProjectFeature>망치!!!!! 나가신다!!!!</ProjectFeature>
+            </ul>
 
-          <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-            {
-              project.sliderImage.map((value) => (
-                <SwiperSlide>
-                  <img src={value} alt="slider" />
-                </SwiperSlide>
-              ))
-            }
-          </Swiper>
-          <Margin />
-
-          <Container>
-            <ProjectViewSection title="🔗 참고 URL">
+            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
               {
-                project.url.map((value) => (
-                  <p><img src={URL_ICON[value.iconIdx]} alt="-> "/> <a href={value.url}>{value.url}</a></p>
+                project.sliderImage.map((value) => (
+                  <SwiperSlide>
+                    <img src={value} alt="slider" />
+                  </SwiperSlide>
                 ))
               }
-            </ProjectViewSection>
-            <Margin />
+            </Swiper>
+          </ProjectViewSection>
+          <Margin />
+
+          <ProjectViewSection title="👀 프로젝트 개요">
+            {
+              project.overview.map((value, idx) => (
+                <p><img src={OVERVIEW_ICONS[idx]} alt="-> "/> {value}</p>
+              ))
+            }
+            <p><img src={OVERVIEW_ICONS[3]} alt="-> " /> {project.skills.join(', ')}</p>
+          </ProjectViewSection>
+          <Margin />
+
+          <ProjectViewSection title="🔗 참고 URL">
+            <p>🚀 서비스 URL &nbsp; <a href="https://spfunc.ml">https://spfunc.ml</a></p>
+            <p>🚀 서비스 URL &nbsp; <a href="https://spfunc.ml">https://spfunc.ml</a></p>
+            <p>🚀 서비스 URL &nbsp; <a href="https://spfunc.ml">https://spfunc.ml</a></p>
+          </ProjectViewSection>
+          <Margin />
+
+
+
+
+
+          <Margin /><Margin />
+          <Container>
 
             <OverviewBox>
               <ProjectViewSection title="개요">
@@ -127,7 +134,7 @@ const ProjectView = () => {
               </ProjectViewSection>
               <div style={{ width: 16, height: 64 }} />
               <ProjectViewSection title="주요 기능">
-                <p>{project.feature}</p>
+
               </ProjectViewSection>
             </OverviewBox>
 

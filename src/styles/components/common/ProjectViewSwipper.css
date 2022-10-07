@@ -4,6 +4,7 @@
 }
 
 .swiper-slide {
+    height: 100%;
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -22,6 +23,7 @@
     -webkit-align-items: center;
     align-items: center;
 }
+
 
 /*@media screen and (max-width: 768px) {*/
 /*    .swiper {*/

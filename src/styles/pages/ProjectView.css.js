@@ -7,6 +7,10 @@ export const ProjectViewContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 32px 0 32px;
+  }
 `
 
 export const ProjectViewPage = styled.div`
@@ -22,18 +26,18 @@ export const Header = styled.header`
   @media screen and (max-width: 768px) {
     margin-left: 16px;
   }
-  
+
   img {
     cursor: pointer;
   }
 `
 
 export const ProjectViewTitle = styled.h1`
-  color: white;
-  font-size: 3rem;
-  font-weight: 400;
-  margin-bottom: 64px;
-  
+  color: rgb(240, 240, 240);
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 12px;
+
   @media screen and (max-width: 768px) {
     font-size: 2.125rem;
     width: 100%;
@@ -41,23 +45,25 @@ export const ProjectViewTitle = styled.h1`
   }
 `
 
+export const ProjectViewSubtitle = styled.h3`
+  font-size: 16px;
+  color: rgb(240, 240, 240);
+  font-weight: 300;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+`
+
+export const ProjectFeature = styled.li`
+  font-size: 16px;
+  color: white;
+  font-weight: normal;
+  line-height: 2rem;
+`
+
 export const Margin = styled.div`
-  height: 64px;
-`
-
-export const Container = styled.div`
-  @media screen and (max-width: 768px) {
-    margin: 0 16px 0 16px;
-  }
-`
-
-export const OverviewBox = styled.div`
-  display: flex;
-  width: 100%;
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
+  height: 48px;
 `
 
 export const Section = styled.div`
@@ -66,21 +72,27 @@ export const Section = styled.div`
   h2 {
     font-size: 1.75rem;
     color: white;
-    margin: 0;
+    margin: 0 0 8px 0;
   }
 
   p {
-    color: #f1f1f1;
-    font-weight: 300;
-    margin-bottom: 4px;
+    color: #ececec;
+    margin-bottom: 8px;
     display: flex;
+    font-size: 16px;
     align-items: center;
+    line-height: 1.75rem;
 
     img {
       margin-right: 8px;
       width: 16px;
       height: 16px;
     }
+  }
+
+  a {
+    color: #a6a6a6;
+    text-decoration: underline;
   }
 
   .custom-hr {

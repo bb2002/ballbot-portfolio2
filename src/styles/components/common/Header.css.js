@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-  width: 100%;
-  margin: 40px 0 40px 0;
+  width: calc(100% - 16px);
+  padding: 40px 0 16px 0;
   display: flex;
   justify-content: center;
+  position: fixed;
+  background-color: black;
+  z-index: 1;
   
   @media screen and (max-width: 1024px) {
     flex-direction: column;

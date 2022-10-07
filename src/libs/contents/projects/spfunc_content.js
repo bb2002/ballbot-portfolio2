@@ -4,7 +4,7 @@ const SPFUNC_CONTENT = {
   backgroundImage: backgroundImage,
   title: 'SPECIAL.FUNCTION',
   subtitle: <>준비된 컴퓨팅 리소스에서 코드를 실행하고 용량을<br />관리하는 서버리스 컴퓨팅 서비스 템플릿</>,
-  skills: ['NestJS', 'Docker', 'React'],
+  skills: ['NestJS', 'Docker', 'React', 'GithubAction'],
   sliderImage: [
     backgroundImage,
     "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fspfunc%2Fp_spfunc_2.png?alt=media&token=36874654-1e91-439e-8a8a-d670ca2f1234",
@@ -13,17 +13,22 @@ const SPFUNC_CONTENT = {
     "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fspfunc%2Fp_spfunc_5.png?alt=media&token=92ead196-8a81-463e-ad73-564c0a37a1ff",
     "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fspfunc%2Fp_spfunc_6.png?alt=media&token=efdd1369-a283-42e4-b201-b7633f2c11d7",
   ],
+  mainFeatures: [
+    '독립된 공간에서 사용자의 코드를 실행',
+    '도커 컨테이너를 실행 주기에 따라 자동으로 관리',
+    'HTTP 요청으로 코드를 실행시킬 수 있어 서버리스 앱 구현 가능',
+    '코드가 오픈되어 있어 상황에 맞게 fork 하여 커스텀 서버 구현 가능',
+  ],
   overview: [
-    "2인 개발",
-    "기획 및 백엔드 개발",
-    "2022년 08월 ~ 2022년 10월",
+    "참가 인원: 2인",
+    "담당 작업: 기획, 백엔드 개발",
+    "개발 기간: 2022년 08월 ~ 2022년 10월",
   ],
   url: [
-    { url: 'https://spfunc.ml', iconIdx: 0 },
-    { url: 'https://github.com/team-special-week/specialfunc-api', iconIdx: 1 },
-    { url: 'https://www.youtube.com/watch?v=OSPdSbOL3OA', iconIdx: 2 },
+    { title: '🚀 배포 주소: ', url: 'https://spfunc.ml' },
+    { title: '📝 소스 코드: ', url: 'https://github.com/team-special-week/specialfunc-api' },
+    { title: '📺 시연 영상: ', url: 'https://www.youtube.com/watch?v=OSPdSbOL3OA' },
   ],
-
   feature: <>
     &nbsp;&nbsp;Special Function의 주요 기능은 '독립된 공간에서 사용자의 코드를 실행시키는 것' 입니다. 사용자는 자신의 코드를 ZIP 형태의 압축 파일로 올리고, 서버는 이 코드를 바탕으로
     HTTP 요청을 받을 수 있는 형태의 Docker Image로 빌드 합니다. 빌드가 완료되면 미리 설정된 HTTP Endpoint를 호출하여 함수를 실행하고, 응답 값을 받을 수 있습니다.

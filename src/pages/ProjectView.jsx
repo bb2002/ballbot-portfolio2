@@ -4,7 +4,7 @@ import {
   ProjectViewPage,
   Header,
   ProjectViewTitle,
-  Margin, OverviewBox, Container
+  Margin, ProjectViewSubtitle, ProjectFeature
 } from "../styles/pages/ProjectView.css";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -29,12 +29,6 @@ const OVERVIEW_ICONS = [
   require('../assets/icons/i_clock.png'),
   require('../assets/icons/i_tools.png')
 ];
-
-const URL_ICON = [
-  require('../assets/icons/i_url.png'),
-  require('../assets/icons/i_github.png'),
-  require('../assets/icons/i_youtube.png'),
-]
 
 const ProjectView = () => {
   const { projectName } = useParams();
@@ -83,53 +77,67 @@ const ProjectView = () => {
             <img src={require('../assets/icons/i_arrow_back.png')} alt="Back" onClick={onBackClicked} />
           </Header>
           <ProjectViewTitle>{project.title}</ProjectViewTitle>
-
-          <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-            {
-              project.sliderImage.map((value) => (
-                <SwiperSlide>
-                  <img src={value} alt="slider" />
-                </SwiperSlide>
-              ))
-            }
-          </Swiper>
+          <ProjectViewSubtitle>{project.subtitle}</ProjectViewSubtitle>
           <Margin />
 
-          <Container>
-            <ProjectViewSection title="🔗 참고 URL">
+          <ProjectViewSection title="✅ 주요 기능">
+            <ul>
               {
-                project.url.map((value) => (
-                  <p><img src={URL_ICON[value.iconIdx]} alt="-> "/> <a href={value.url}>{value.url}</a></p>
+                project.mainFeatures?.map((value) => (
+                  <ProjectFeature>{value}</ProjectFeature>
                 ))
               }
-            </ProjectViewSection>
-            <Margin />
+            </ul>
+            <p>{project.feature}</p>
+            <br />
 
-            <OverviewBox>
-              <ProjectViewSection title="개요">
-                {
-                  project.overview.map((value, idx) => (
-                    <p><img src={OVERVIEW_ICONS[idx]} alt="-> "/> {value}</p>
-                  ))
-                }
-                <p><img src={OVERVIEW_ICONS[3]} alt="-> " /> {project.skills.join(',')}</p>
-              </ProjectViewSection>
-              <div style={{ width: 16, height: 64 }} />
-              <ProjectViewSection title="주요 기능">
-                <p>{project.feature}</p>
-              </ProjectViewSection>
-            </OverviewBox>
+            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+              {
+                project.sliderImage.map((value) => (
+                  <SwiperSlide>
+                    <img src={value} alt="slider" />
+                  </SwiperSlide>
+                ))
+              }
+            </Swiper>
+          </ProjectViewSection>
+          <Margin />
 
-            <ProjectViewSection title="개발 동기">
-              <p>{project.motive}</p>
-            </ProjectViewSection>
-            <Margin />
+          <ProjectViewSection title="👀 프로젝트 개요">
+            {
+              project.overview.map((value, idx) => (
+                <p><img src={OVERVIEW_ICONS[idx]} alt="-> "/> {value}</p>
+              ))
+            }
+            <p><img src={OVERVIEW_ICONS[3]} alt="-> " /> 기술 스택: {project.skills.join(', ')}</p>
+          </ProjectViewSection>
+          <Margin />
 
-            <ProjectViewSection title="느낀점">
-              <p>{project.feel}</p>
-            </ProjectViewSection>
-            <Margin />
-          </Container>
+          <ProjectViewSection title="🔗 참고 URL">
+            {
+              project.url?.map((value) => (
+                <p>{value.title} &nbsp; <a href={value.url} target="_blank" rel="noreferrer">{value.url}</a></p>
+              ))
+            }
+          </ProjectViewSection>
+          <Margin />
+
+          <ProjectViewSection title="개발 동기">
+            <p>{project.motive}</p>
+          </ProjectViewSection>
+          <Margin />
+
+          {
+            project.feel && (
+              <>
+                <ProjectViewSection title="느낀점">
+                  <p>{project.feel}</p>
+                </ProjectViewSection>
+                <Margin />
+              </>
+            )
+          }
+
         </ProjectViewPage>
       </ProjectViewContainer>
     )

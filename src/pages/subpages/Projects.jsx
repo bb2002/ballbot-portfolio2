@@ -8,7 +8,6 @@ import SPFUNC_CONTENT from "../../libs/contents/projects/spfunc_content";
 import UPTOTK_CONTENT from "../../libs/contents/projects/uptotk_content";
 import CODEDURI_CONTENT from "../../libs/contents/projects/codeduri_content";
 import GAKPOK_CONTENT from "../../libs/contents/projects/gakpok_content";
-import CASHNAMU_CONTENT from "../../libs/contents/projects/cashnamu_content";
 import IO_CONTENT from "../../libs/contents/projects/io_content";
 import AUTOMIRI_CONTENT from "../../libs/contents/projects/automiri_content";
 import { useNavigate } from "react-router-dom";
@@ -56,10 +55,14 @@ const Projects = () => {
               contents={GAKPOK_CONTENT} />
           </div>
           <div>
+            {/*<ProjectTile*/}
+            {/*  onClick={() => onProjectClickHandler('cashnamu')}*/}
+            {/*  size="regular"*/}
+            {/*  contents={CASHNAMU_CONTENT} />*/}
             <ProjectTile
-              onClick={() => onProjectClickHandler('cashnamu')}
+              onClick={() => onProjectClickHandler('automiri')}
               size="regular"
-              contents={CASHNAMU_CONTENT} />
+              contents={AUTOMIRI_CONTENT} />
           </div>
         </ProjectLineTwo>
 
@@ -72,10 +75,10 @@ const Projects = () => {
                 contents={IO_CONTENT} />
             </div>
             <div>
-              <ProjectTile
-                onClick={() => onProjectClickHandler('automiri')}
-                size="small"
-                contents={AUTOMIRI_CONTENT} />
+              {/*<ProjectTile*/}
+              {/*  onClick={() => onProjectClickHandler('automiri')}*/}
+              {/*  size="small"*/}
+              {/*  contents={AUTOMIRI_CONTENT} />*/}
             </div>
           </div>
           <div id="three-empty"/>

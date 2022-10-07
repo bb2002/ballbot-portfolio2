@@ -4,7 +4,7 @@ import {
   ProjectViewPage,
   Header,
   ProjectViewTitle,
-  Margin, OverviewBox, Container, ProjectViewSubtitle, ProjectFeature, SwiperImageContainer
+  Margin, ProjectViewSubtitle, ProjectFeature
 } from "../styles/pages/ProjectView.css";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -77,15 +77,19 @@ const ProjectView = () => {
             <img src={require('../assets/icons/i_arrow_back.png')} alt="Back" onClick={onBackClicked} />
           </Header>
           <ProjectViewTitle>{project.title}</ProjectViewTitle>
-          <ProjectViewSubtitle>Serverless 플랫폼 코드 탬플릿</ProjectViewSubtitle>
+          <ProjectViewSubtitle>{project.subtitle}</ProjectViewSubtitle>
           <Margin />
 
           <ProjectViewSection title="✅ 주요 기능">
             <ul>
-              <ProjectFeature>안녕 친구들 해결사가 왔어~!</ProjectFeature>
-              <ProjectFeature>디바 온라인!</ProjectFeature>
-              <ProjectFeature>망치!!!!! 나가신다!!!!</ProjectFeature>
+              {
+                project.mainFeatures?.map((value) => (
+                  <ProjectFeature>{value}</ProjectFeature>
+                ))
+              }
             </ul>
+            <p>{project.feature}</p>
+            <br />
 
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
               {
@@ -105,49 +109,35 @@ const ProjectView = () => {
                 <p><img src={OVERVIEW_ICONS[idx]} alt="-> "/> {value}</p>
               ))
             }
-            <p><img src={OVERVIEW_ICONS[3]} alt="-> " /> {project.skills.join(', ')}</p>
+            <p><img src={OVERVIEW_ICONS[3]} alt="-> " /> 기술 스택: {project.skills.join(', ')}</p>
           </ProjectViewSection>
           <Margin />
 
           <ProjectViewSection title="🔗 참고 URL">
-            <p>🚀 서비스 URL &nbsp; <a href="https://spfunc.ml">https://spfunc.ml</a></p>
-            <p>🚀 서비스 URL &nbsp; <a href="https://spfunc.ml">https://spfunc.ml</a></p>
-            <p>🚀 서비스 URL &nbsp; <a href="https://spfunc.ml">https://spfunc.ml</a></p>
+            {
+              project.url?.map((value) => (
+                <p>{value.title} &nbsp; <a href={value.url} target="_blank" rel="noreferrer">{value.url}</a></p>
+              ))
+            }
           </ProjectViewSection>
           <Margin />
 
+          <ProjectViewSection title="개발 동기">
+            <p>{project.motive}</p>
+          </ProjectViewSection>
+          <Margin />
 
+          {
+            project.feel && (
+              <>
+                <ProjectViewSection title="느낀점">
+                  <p>{project.feel}</p>
+                </ProjectViewSection>
+                <Margin />
+              </>
+            )
+          }
 
-
-
-          <Margin /><Margin />
-          <Container>
-
-            <OverviewBox>
-              <ProjectViewSection title="개요">
-                {
-                  project.overview.map((value, idx) => (
-                    <p><img src={OVERVIEW_ICONS[idx]} alt="-> "/> {value}</p>
-                  ))
-                }
-                <p><img src={OVERVIEW_ICONS[3]} alt="-> " /> {project.skills.join(',')}</p>
-              </ProjectViewSection>
-              <div style={{ width: 16, height: 64 }} />
-              <ProjectViewSection title="주요 기능">
-
-              </ProjectViewSection>
-            </OverviewBox>
-
-            <ProjectViewSection title="개발 동기">
-              <p>{project.motive}</p>
-            </ProjectViewSection>
-            <Margin />
-
-            <ProjectViewSection title="느낀점">
-              <p>{project.feel}</p>
-            </ProjectViewSection>
-            <Margin />
-          </Container>
         </ProjectViewPage>
       </ProjectViewContainer>
     )

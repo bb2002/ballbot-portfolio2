@@ -43,7 +43,7 @@ const About = () => {
           <p>2002년 06월 06일</p>
         </AboutMeCardWithTitle>
         <AboutMeCardPadding />
-        <AboutMeCardWithTitle style={{ backgroundColor: '#FF9F43' }}>
+        <AboutMeCardWithTitle style={{ backgroundColor: '#e67e22' }}>
           <h2>Education</h2>
           <ul>
             <li>선린인터넷고등학교 졸업</li>
@@ -59,10 +59,13 @@ const About = () => {
           </ul>
         </AboutMeCardWithTitle>
         <AboutMeCardPadding />
-        <AboutMeCardWithIcon style={{ backgroundColor: '#2D3436' }}>
-          <img src={i_github} alt="Github" />
-          <p>Github</p>
-        </AboutMeCardWithIcon>
+        <a href="https://www.github.com/bb2002" target="_blank" rel="noreferrer">
+          <AboutMeCardWithIcon style={{ backgroundColor: '#2D3436' }}>
+            <img src={i_github} alt="Github" />
+            <p>Github</p>
+          </AboutMeCardWithIcon>
+        </a>
+
       </AboutMeCardContainer>
     </AboutPage>
   )

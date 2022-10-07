@@ -37,6 +37,24 @@ const SkillAvatar = {
       <Tooltip placement="top" title="Docker">
         <Avatar src={require('../../assets/icons/i_docker.png')} style={{ ...avatarDefaultStyle, border: '2px solid #0DB1E6'}} />
       </Tooltip>
+    </>,
+  'NextJS':
+    <>
+      <Tooltip placement="top" title="NextJS">
+        <Avatar src={require('../../assets/icons/i_nextjs.png')} style={{ ...avatarDefaultStyle, border: '2px solid #333333'}} />
+      </Tooltip>
+    </>,
+  'GithubAction':
+    <>
+      <Tooltip placement="top" title="GithubAction">
+        <Avatar src={require('../../assets/icons/i_github_dark.png')} style={{ ...avatarDefaultStyle, border: '2px solid #333333'}} />
+      </Tooltip>
+    </>,
+  'Firebase':
+    <>
+      <Tooltip placement="top" title="Firebase">
+        <Avatar src={require('../../assets/icons/i_firebase.png')} style={{ ...avatarDefaultStyle, border: '2px solid rgb(240,111,16)'}} />
+      </Tooltip>
     </>
 }
 

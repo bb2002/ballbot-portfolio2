@@ -15,18 +15,23 @@ const GAKPOK_CONTENT = {
     "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_7.png?alt=media&token=ee6d7633-35ee-4834-98e4-58e66474a668",
     "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_8.png?alt=media&token=6272c324-c512-4e5f-977f-836746481972",
   ],
+  mainFeatures: [
+    '자신의 플레이 방법을 공유할 수 있는 커뮤니티 서비스',
+    '블라자드 엔터테이먼트의 베틀넷 계정 시스템과 연동하는 기능',
+    '자신의 활약 모습을 동영상 형태로 업로드 할 수 있는 기능',
+    '글 읽기, 쓰기에 제제를 가할 수 있는 관리자 기능'
+  ],
   overview: [
-    "1인 개발",
-    "기획 및 개발 전반 담당",
-    "2022년 02월 ~ 2022년 04월",
+    "참가 인원: 1인",
+    "담당 작업: 기획 및 개발 전반",
+    "개발 기간: 2022년 02월 ~ 2022년 04월",
   ],
   url: [
-    { url: 'https://gakpok.saintdev.kr', iconIdx: 0 },
+    { title: '🚀 배포 주소: ', url: 'https://gakpok.saintdev.kr' },
   ],
-
   feature: <>
     &nbsp;&nbsp;각폭 연구소는 오버워치 내 게임 캐릭터 '디바'의 운용 방법을 연구해보고 이를 공유하는 서비스입니다. 유튜브, 블로그, 인 게임 등에서 알게 된 정보를 이곳에 저장하고 찾아보기 쉽게 지도의 마커 형태로 표현할 수 있도록 만든 게 특징입니다.
-    <br />&nbsp;&nbsp;그뿐만 아니라, 게임 개발사 `블리자드 엔터테인먼트`의 `베틀 넷` 계정과 사용자 정보를 연동하여 소셜 로그인 기능을 구현하여 오버워치 플레이어라면 누구나 자신의 팁을 공유할 수 있는게 특징입니다.
+    <br />&nbsp;&nbsp;그뿐만 아니라, 게임 개발사 '블리자드 엔터테인먼트'의 '베틀넷' 계정과 사용자 정보를 연동하여 소셜 로그인 기능을 구현하여 오버워치 플레이어라면 누구나 자신의 팁을 공유할 수 있는게 특징입니다.
   </>,
   motive: <>
     &nbsp;&nbsp;이 프로젝트를 개발한 2022년에는 '어린 시절 상상만 하고 완성하지 못한 프로젝트 만들기'라는 목표를 세웠고, 이를 실천하기 위해 개발했습니다.

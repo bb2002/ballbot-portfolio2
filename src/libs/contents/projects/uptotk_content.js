@@ -10,15 +10,19 @@ const UPTOTK_CONTENT = {
     "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fuptotk%2Fp_uptotk_2.png?alt=media&token=aef13ab5-1144-45ee-9645-6a7bb4ab1bf2",
     "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fuptotk%2Fp_uptotk_3.png?alt=media&token=ae85dc90-e213-484f-953b-394806e2312c",
   ],
+  mainFeatures: [
+    '최대 100MB 의 파일을 공유 할 수 있음',
+    '공유된 파일에는 쉬운 단어로 된 UUID 가 발급되어 접근이 용이',
+    '비밀번호, 만료기간, 다운로드 횟수 제한을 설정 할 수 있음'
+  ],
   overview: [
-    "1인 개발",
-    "기획 및 개발 전반 담당",
-    "2022년 03월 ~ 2022년 04월",
+    "참가 인원: 1인",
+    "담당 작업: 기획 및 개발 전반",
+    "개발 기간: 2022년 03월 ~ 2022년 04월",
   ],
   url: [
-    { url: 'https://upto.tk', iconIdx: 0 },
+    { title: '🚀 배포 주소: ', url: 'https://upto.tk' },
   ],
-
   feature: <>
     &nbsp;&nbsp;upto.tk는 별도의 가입 없이, 파일을 빠르게 올리고 누군가와 공유 할 수 있는 '파일 공유 서비스' 입니다. 최대 100MB, 5개까지 업로드가 가능하고, 업로드된 파일은 쉬운 고유주소로 접근할 수 있습니다.
     타 업로드 서비스는 복잡하고 암기하기 어려운 UUID를 통해 파일에 접근하지만, upto.tk는 초등학생 수준의 쉬운 영어단어 조합으로 된 ID를 이용하는 점이 특색입니다.

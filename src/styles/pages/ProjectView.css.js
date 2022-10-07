@@ -7,6 +7,10 @@ export const ProjectViewContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 32px 0 32px;
+  }
 `
 
 export const ProjectViewPage = styled.div`
@@ -45,6 +49,10 @@ export const ProjectViewSubtitle = styled.h3`
   font-size: 16px;
   color: rgb(240, 240, 240);
   font-weight: 300;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 `
 
 export const ProjectFeature = styled.li`
@@ -55,22 +63,7 @@ export const ProjectFeature = styled.li`
 `
 
 export const Margin = styled.div`
-  height: 64px;
-`
-
-export const Container = styled.div`
-  @media screen and (max-width: 768px) {
-    margin: 0 16px 0 16px;
-  }
-`
-
-export const OverviewBox = styled.div`
-  display: flex;
-  width: 100%;
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
+  height: 48px;
 `
 
 export const Section = styled.div`
@@ -83,11 +76,12 @@ export const Section = styled.div`
   }
 
   p {
-    color: #f1f1f1;
+    color: #ececec;
     margin-bottom: 8px;
     display: flex;
     font-size: 16px;
     align-items: center;
+    line-height: 1.75rem;
 
     img {
       margin-right: 8px;

@@ -6,22 +6,25 @@ const IO_CONTENT = {
   backgroundImage: backgroundImage,
   title: '(주) 이오',
   subtitle: <>(주)이오 회사 홈페이지 제작</>,
-  skills: ['React'],
+  skills: ['React', 'Firebase'],
   sliderImage: [
     backgroundImage,
     ...TIMELINE_PROJECT_IMAGES.io
   ],
+  mainFeatures: [
+    'Firebase Hosting 과 Firestore 를 이용한 게시판',
+    '공지사항, 채용공고를 등록할 수 있는 관리자 콘솔',
+  ],
   overview: [
-    "1인 개발",
-    "전체 프로젝트 개발 담당",
-    "2022년 8월부터 약 1개월",
+    "참가 인원: 1인",
+    "담당 작업: 디자인 및 개발 전반 담당",
+    "개발 기간: 2021년 11월 ~ 2021년 12월",
   ],
   url: [
-    { url: 'https://iopeoples.com', iconIdx: 0 },
+    { title: '🚀 배포 주소: ', url: 'https://iopeoples.com' },
   ],
-
   feature: <>
-    &nbsp;&nbsp;주식회사 '이오'의 회사 홈페이지 개발 외주를 받고 제작했습니다.
+    주식회사 '이오'의 회사 홈페이지 개발 외주를 받고 제작했습니다.
   </>,
   motive: <>
     &nbsp;&nbsp;IT 업체가 아니라 따로 개발자가 없는 회사였습니다. 따라서 별도의 서버를 두기 어려워 파이어베이스에서 제공하는 Hosting 을 이용해 홈페이지를 배포했고, Firestore 데이터베이스를 이용해 게시판을 구현했습니다.

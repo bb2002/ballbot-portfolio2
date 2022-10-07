@@ -11,15 +11,19 @@ const CODEDURI_CONTENT = {
     backgroundImage,
     ...TIMELINE_PROJECT_IMAGES.codeduri
   ],
+  mainFeatures: [
+    '웹에서 코드를 작성하고 채점해 볼 수 있는 기능',
+    '웹 에디터, 스코어보드가 구현되어 코딩 대회 개최 가능',
+    '강원대학교 k-cloud와 계정이 연동되어 학부생만 이용 가능'
+  ],
   overview: [
-    "5인 개발",
-    "프론트엔드 개발 담당",
-    "2021년 4월부터 약 6개월",
+    "참가 인원: 5인 (백엔드 2명, 프론트엔드 3명)",
+    "담당 작업: 기획 및 프론트엔드 개발",
+    "개발 기간: 2021년 04월 ~ 2021년 10월",
   ],
   url: [
-    { url: 'https://codeduri.kangwon.ac.kr', iconIdx: 0 },
+    { title: '🚀 배포 주소: ', url: 'https://codeduri.kangwon.ac.kr' },
   ],
-
   feature: <>
     &nbsp;&nbsp;강원대학교에서 사용하는 코딩 교육 플랫폼입니다. 교수가 대회를 개최하면 학생들은 대회에 참가하여 문제 풀이를 할 수 있습니다.
     답안이 되는 코드를 직접 채점해 볼 수 있는 기능, 웹 에디터, 스코어보드 등이 구현되어 있습니다.

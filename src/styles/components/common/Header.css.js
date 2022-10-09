@@ -13,6 +13,7 @@ export const HeaderContainer = styled.header`
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: relative;
   }
 `
 

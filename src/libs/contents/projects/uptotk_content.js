@@ -7,8 +7,8 @@ const UPTOTK_CONTENT = {
   skills: ['NestJS', 'React'],
   sliderImage: [
     backgroundImage,
-    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fuptotk%2Fp_uptotk_2.png?alt=media&token=aef13ab5-1144-45ee-9645-6a7bb4ab1bf2",
-    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fuptotk%2Fp_uptotk_3.png?alt=media&token=ae85dc90-e213-484f-953b-394806e2312c",
+    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fuptotk%2Fp_uptotk_2.png?alt=media&token=b8868a58-b97d-4e87-8047-5d236f4fdaa3",
+    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fuptotk%2Fp_uptotk_3.png?alt=media&token=8cb468fd-57fb-4521-8158-71b50acce42a",
   ],
   mainFeatures: [
     '최대 100MB 의 파일을 공유 할 수 있음',

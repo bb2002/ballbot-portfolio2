@@ -7,11 +7,11 @@ const SPFUNC_CONTENT = {
   skills: ['NestJS', 'Docker', 'React', 'GithubAction'],
   sliderImage: [
     backgroundImage,
-    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fspfunc%2Fp_spfunc_2.png?alt=media&token=36874654-1e91-439e-8a8a-d670ca2f1234",
-    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fspfunc%2Fp_spfunc_3.png?alt=media&token=4e06bad2-5f9a-4951-a91f-5414dd63728b",
-    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fspfunc%2Fp_spfunc_4.png?alt=media&token=c1259ed6-829d-4cf9-bba4-c8099926e874",
-    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fspfunc%2Fp_spfunc_5.png?alt=media&token=92ead196-8a81-463e-ad73-564c0a37a1ff",
-    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fspfunc%2Fp_spfunc_6.png?alt=media&token=efdd1369-a283-42e4-b201-b7633f2c11d7",
+    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fspfunc%2Fp_spfunc_2.png?alt=media&token=cc5c8d6e-42c7-4681-821a-3d88ccbeaa7a",
+    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fspfunc%2Fp_spfunc_3.png?alt=media&token=a2a50428-5acf-420d-8163-bc08a914488b",
+    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fspfunc%2Fp_spfunc_4.png?alt=media&token=a15f3781-2c22-4250-91c6-2ffcd44a7b16",
+    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fspfunc%2Fp_spfunc_5.png?alt=media&token=4081ff82-a994-4546-b0ca-bf95fb0268ce",
+    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fspfunc%2Fp_spfunc_6.png?alt=media&token=3dfef24c-2814-4572-b93c-5fee81df3094",
   ],
   mainFeatures: [
     '독립된 공간에서 사용자의 코드를 실행',

@@ -145,7 +145,7 @@ export const TimelineContentIcon = styled.div`
     margin-left: 16px;
 
     img {
-      width: 48px;
+      width: 32px;
       object-fit: cover;
     }
   }

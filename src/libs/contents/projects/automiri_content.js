@@ -1,4 +1,4 @@
-const backgroundImage = 'https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fautomiri%2Fp_automiri_1.png?alt=media&token=2854abfc-2be9-4fef-88d3-11ae97013659'
+const backgroundImage = 'https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fautomiri%2Fp_automiri_1.png?alt=media&token=8c92f8b3-4866-4c0b-9d53-be3f2debd323'
 
 const AUTOMIRI_CONTENT = {
   backgroundImage: backgroundImage,
@@ -7,7 +7,7 @@ const AUTOMIRI_CONTENT = {
   skills: ['NodeJS'],
   sliderImage: [
     backgroundImage,
-    'https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fautomiri%2Fp_automiri_2.png?alt=media&token=14ff0aff-7a0d-48e1-9d2c-1a2d9bc77146'
+    'https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fautomiri%2Fp_automiri_2.png?alt=media&token=dcfaa2a5-e488-4bd5-a4a7-955d3ee9be60'
   ],
   mainFeatures: [
     'MiRI 서버 시간을 기준으로 예약 진행',

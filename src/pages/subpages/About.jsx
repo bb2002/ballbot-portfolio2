@@ -16,15 +16,14 @@ const About = () => {
   return (
     <AboutPage>
       <DarkModal
-        title="클린 코드에 대한 생각"
+        title="읽기 쉬운 코드를 쓰는 방법"
         centered={true}
         open={modal2Open}
         onCancel={() => setModal2Open(false)}>
         <ol>
-          <CleanCodeLi>Clean Code 를 너무 맹신하지는 않는다.</CleanCodeLi>
-          <CleanCodeLi>조직이 정한 컨벤션을 따라 조직에 어울리는 코드를 쓴다.</CleanCodeLi>
-          <CleanCodeLi>오묘한 이름보다는 길고 장황한 이름이 낫다.</CleanCodeLi>
-          <CleanCodeLi>내가 쓴 코드는 내 것이 아닌 조직의 것으로 만들어야 한다.</CleanCodeLi>
+          <CleanCodeLi>Clean Code를 너무 맹신하지 않는게 좋다고 생각합니다.</CleanCodeLi>
+          <CleanCodeLi>그 조직과 프로젝트에 어울리는 코드를 작성합니다.</CleanCodeLi>
+          <CleanCodeLi>변수, 함수명을 짓기 어렵다면 차라리 긴 이름을 씁니다.</CleanCodeLi>
         </ol>
       </DarkModal>
 

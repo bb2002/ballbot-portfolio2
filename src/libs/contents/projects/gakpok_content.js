@@ -1,4 +1,4 @@
-const backgroundImage = 'https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_1.png?alt=media&token=6bb17d20-6ca7-4825-baa3-7f96be55513a'
+const backgroundImage = 'https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_1.png?alt=media&token=8fab8626-8daa-405d-b664-1e9716c3d464'
 
 const GAKPOK_CONTENT = {
   backgroundImage: backgroundImage,
@@ -7,11 +7,11 @@ const GAKPOK_CONTENT = {
   skills: ['NestJS', 'React'],
   sliderImage: [
     backgroundImage,
-    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_2.png?alt=media&token=a5097479-be71-46c0-b425-c4b4584f318e",
+    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_2.png?alt=media&token=a530e866-59ee-42e5-a4d2-dc2ab6b42eb5",
     "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_3.png?alt=media&token=62d3e8e5-3386-4902-bbe7-c9db3b45f614",
-    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_4.png?alt=media&token=7c29dec7-e9bc-4468-b519-83bf17db8a29",
-    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_5.png?alt=media&token=f16eb75a-b3fe-4e5f-9286-a259dbdbe078",
-    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_6.png?alt=media&token=ac4b2334-18d9-4899-a77a-3d3cd3b9d82a",
+    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_4.png?alt=media&token=7bf0e443-0cca-46e6-b25c-70f9a059a1f7",
+    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_5.png?alt=media&token=75850cad-9c4e-4658-bb10-edb7e212c0b7",
+    "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_6.png?alt=media&token=0c2ba444-6772-4bea-a862-cf00cb556443",
     "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_7.png?alt=media&token=ee6d7633-35ee-4834-98e4-58e66474a668",
     "https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fgakpok%2Fp_gakpok_8.png?alt=media&token=6272c324-c512-4e5f-977f-836746481972",
   ],

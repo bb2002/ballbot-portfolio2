@@ -1,6 +1,6 @@
 import {TIMELINE_PROJECT_IMAGES} from "../timeline/timeline_images";
 
-const backgroundImage ='https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fcodeduri%2Fp_codeduri_1.png?alt=media&token=af1949f9-bbeb-4361-9674-53ea47cbb9b2'
+const backgroundImage ='https://firebasestorage.googleapis.com/v0/b/ballbot-portfolio2.appspot.com/o/projects%2Fcodeduri%2Fp_codeduri_1.png?alt=media&token=ec032d7c-6356-4f81-97b6-bb583516c134'
 
 const CODEDURI_CONTENT = {
   backgroundImage: backgroundImage,
